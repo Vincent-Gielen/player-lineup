@@ -78,7 +78,6 @@ Jordan is a basketball fan who enjoys following players across different teams. 
 
 Whether you're managing a real basketball team or just tracking your favorite players, Player Lineup offers a flexible way to organize and analyze performance.
 
-
 ## 🔐 Security
 
 - **Authentication** is handled using secure tokens to protect user sessions.
