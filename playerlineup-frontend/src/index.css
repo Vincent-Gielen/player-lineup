@@ -1,0 +1,196 @@
+body {
+  margin: 1em;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  background-image: url(./assets/img/empty-basketball-courts-focusing-free-throw-lines-baskets.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+div.overlay {
+  background: transparent;
+}
+
+
+h1 {
+  text-align: center;
+  color: #ff4500;
+  text-shadow: 1px 1px 1px black;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 1px #ff4500;
+  font-size: 3rem;
+  margin-top: 3.5rem;
+}
+
+.team-title {
+  margin-top: -0.5rem;
+}
+
+.comparison-table {
+  margin: 2rem auto;
+  max-width: 80vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #ccc;
+
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #ff4500;
+  color: black;
+  font-size: 1.2rem;
+}
+
+td {
+  background-color: #fff;
+  color: #333;
+}
+
+button {
+  background-color: #ffe4b5;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff4500;
+}
+
+a.nav-link.active {
+  color: #ff4500;
+}
+
+.btn-primary {
+  background-color: #ff4500;
+  border: 1px solid #fff;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #ff4500;
+  border: 1px solid #ff4500;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #ff4500;
+  border: 1px solid #ff4500;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ff4500;
+  color: white;
+  border: 1px solid #ff4500;
+}
+
+.btn-addPlayer {
+  margin-left: 0.2rem;
+  background-color: #ff4500;
+  border: 1px solid #fff;
+}
+
+.btn-addPlayer:hover {
+  background-color: white;
+  color: #ff4500;
+}
+
+.btn-team:hover {
+  background-color: black;
+  color: #ff4500;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #ff4500;
+  font-size: 1.5rem;
+}
+
+.form {
+  margin: auto;
+  max-width: 50vw;
+}
+
+.form-stat {
+  margin: auto;
+  max-width: 20vw;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: #ff4500;
+  text-shadow: 1px 1px 1px black;
+}
+
+.navbar {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pagination {
+  color: #ff4500;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  list-style: none;
+}
+
+.pagination li a {
+  color: #ff4500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ff4500;
+  border-radius: 4px;
+  margin: 0 0.2rem;
+  text-decoration: none;
+}
+
+.pagination li a:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination li.active a {
+  background-color: #ff4500;
+  color: white;
+}
+
+.userInfo {
+  margin-left: 5rem;
+}
+
+.select-player {
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form-check-label {
+  font-size: 1.2rem;
+  color: #ff4500;
+  text-shadow: 1px 1px 1px black;
+}
