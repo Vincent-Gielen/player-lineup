@@ -1,81 +1,112 @@
-## Vereisten
+# Player Lineup
 
-Ik verwacht dat volgende software reeds geïnstalleerd is:
+**Player Lineup** is a full-stack web application that allows users to manage basketball teams, players, and their statistics. The application is designed to be intuitive and efficient for coaches, team managers, or basketball enthusiasts who want a centralized space to track and organize player information.
 
-- [NodeJS](https://nodejs.org)
-- [Yarn](https://yarnpkg.com)
-- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+The app supports creating teams, adding and removing players, and logging detailed stats for each individual player. Everything is stored securely in a structured database, and the application provides a seamless interface for interacting with that data.
 
-## Back-end
+---
 
-### Opstarten
+## 🏗️ Overview
 
-Maak een `.env` file aan op de volgende manier:
-Vervolledig het bestand met jouw credentials, secret,...
+Player Lineup combines modern web technologies to deliver a smooth, responsive experience both on the frontend and backend. The application uses a client-server architecture, where data flows through a RESTful API and is securely persisted in a relational database.
 
-```bash
-NODE_ENV=development
-DATABASE_URL=mysql://<USERNAME>:<PASSWORD>@localhost:3306/<DATABASE_NAME>
-AUTH_JWT_SECRET=<YOUR-JWT-SECRET>
-```
+This project was built with the goal of making team and player management as straightforward and accessible as possible, without sacrificing performance or flexibility.
 
-- Enable Corepack: `corepack enable`
-- Installeer dependencies: `yarn`
-- Voer de migraties uit: `yarn migrate:dev`
-- Start de development server: `yarn start:dev`
+---
 
-### Productie
+## 🚀 Features
 
-Idem als opstarten, met een aanpassing vanaf de migraties:
+- **User Accounts**: Users can sign up and log in securely.
+- **Team Management**: Create, edit, and delete teams.
+- **Player Management**: Add new players to a team, update their information, or remove them.
+- **Stat Tracking**: Record player-specific statistics (e.g., points, assists, rebounds).
+- **Clean UI**: Responsive and modern interface built with a focus on usability.
+- **Scalable Backend**: Organized and efficient server logic designed for real-world use.
+- **Data Persistence**: All player, team, and stat data is saved reliably in a structured database.
 
-- Voer de migraties uit: `yarn prisma migrate deploy`
-- Build het project: `yarn build`
-- Start de productie server: `node build/src/index.js`
+---
 
-### Testen
+## ⚙️ Technologies Used
 
-Maak een `.env.test` file aan op de volgende manier:
-Vervolledig het bestand met jouw credentials, secret,...
+The project is divided into two main parts: the **frontend** and the **backend**, each using its own set of modern tools and technologies.
 
-```bash
-NODE_ENV=testing
-DATABASE_URL=mysql://<USERNAME>:<PASSWORD>@localhost:3306/<DATABASE_NAME>_test
-AUTH_JWT_SECRET=<YOUR-JWT-SECRET>
-```
+### Frontend
 
-Indien alle stappen uit opstarten zijn gevolgd, voer dan volgende stappen uit:
+- **React**: JavaScript library for building interactive user interfaces.
+- **Vite**: Fast build tool that speeds up development and builds.
+- **Yarn**: Package manager used for handling project dependencies.
+- **Cypress**: End-to-end testing framework for simulating real user interactions.
 
-- Voer de migraties uit: `yarn migrate:test`
-- *Optioneel* - Voer de tests uit: `yarn test`
-- Voer de tests uit met coverage: `yarn test:coverage`
-  - Dit genereert een bestand in de \_\_tests\_\_/coverage folder.
-  - Open `__tests__/coverage/lcov-report/index.html` in uw browser om het coverage report te bekijken.
+### Backend
 
-## Front-end
+- **Node.js**: JavaScript runtime for executing backend code.
+- **Express**: Web application framework used to build the server and API.
+- **Prisma**: Type-safe ORM used to interact with the MySQL database.
+- **JWT (JSON Web Tokens)**: Used for secure user authentication.
+- **Yarn**: Also used on the backend for managing dependencies and scripts.
+- **Jest**: JavaScript testing framework used to validate backend logic.
 
-### Opstarten
+### Database
 
-Maak een `.env` file aan op de volgende manier:
+- **MySQL**: A reliable, structured relational database used to store all application data.
+- Hosted externally by my university's server.
 
-```bash
-VITE_API_URL=http://localhost:9000/api
-```
+---
 
-- Enable Corepack: `corepack enable`
-- Installeer dependencies: `yarn install`
-- Start de applicatie: `yarn dev`
+---
 
-### Productie
+## 📋 Example Use Cases
 
-Idem als opstarten, met een aanpassing vóór het starten:
+### 🏀 For Coaches and Team Managers
 
-- Build de applicatie: `yarn build` Dit maakt een `dist` folder met de gecompileerde bestanden.
+Imagine a local basketball coach named Emma. She wants to manage her team digitally instead of using messy spreadsheets or notes on paper. With Player Lineup:
 
-### Testen
+1. Emma creates an account and logs in.
+2. She sets up her basketball team, "The Golden Lions".
+3. She adds her players with names and positions.
+4. After each game, Emma logs player performance: points scored, assists, rebounds, and more.
+5. Over time, she can analyze trends in player performance, make informed lineup decisions, and easily manage changes to her roster.
 
-Indien alle stappen uit opstarten zijn gevolgd, voer dan volgende stappen uit:
+### 📊 For Basketball Fans
 
-Zorg ervoor dat zowel de backend als frontend draaien (zie bovenstaand).
+Jordan is a basketball fan who enjoys following players across different teams. He wants to compare how his favorite players perform throughout the season. Using Player Lineup:
 
-- Voer de testen uit:`yarn test`
-- Kies `E2E testing` in het Cypress window, en kies in het nieuwe tablad welke testen je wilt uitvoeren.
+1. Jordan creates an account and builds a few custom teams with players he follows closely, like "Rising Rookies" or "Top 3-Point Shooters".
+2. He enters player stats after watching games or checking box scores: points, assists, steals and turnovers.
+3. The app allows Jordan to view all the stats side by side and see how each player stacks up.
+4. Over time, he starts noticing trends and keeps his list up to date, helping him make fantasy basketball decisions and fuel discussions with friends.
+
+Whether you're managing a real basketball team or just tracking your favorite players, Player Lineup offers a flexible way to organize and analyze performance.
+
+
+## 🔐 Security
+
+- **Authentication** is handled using secure tokens to protect user sessions.
+- Sensitive data like passwords is stored using hashing techniques to ensure privacy.
+- The app separates environments for development and production to keep data secure and organized.
+
+---
+
+## 🧪 Testing
+
+Testing is an important part of the project. The application includes:
+
+- Automated **unit tests** to ensure key backend logic works correctly.
+- **End-to-end tests** that simulate full user interactions to catch UI issues.
+- Code coverage reports for maintaining code quality over time.
+
+---
+
+## 🤝 Contributions
+
+Player Lineup is a learning-focused project and open to improvement. Whether you have ideas for features, want to clean up some UI, or suggest enhancements for future versions, your contributions are welcome and appreciated.
+
+---
+
+## 📄 License
+
+This project was developed for educational purposes and is not currently licensed for commercial use.
+
+---
+
+Thanks for checking out Player Lineup!
