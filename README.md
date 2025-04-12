@@ -96,6 +96,10 @@ Testing is an important part of the project. The application includes:
 
 ---
 
+## 🎥 Video Demo
+
+I created a video demo to showcase the main features of Player Lineup. You can watch it [here](https://www.youtube.com/watch?v=example).
+
 ## 🤝 Contributions
 
 Player Lineup is a learning-focused project and open to improvement. Whether you have ideas for features, want to clean up some UI, or suggest enhancements for future versions, your contributions are welcome and appreciated.
