@@ -98,7 +98,7 @@ Testing is an important part of the project. The application includes:
 
 ## 🎥 Video Demo
 
-I created a video demo to showcase the main features of Player Lineup. You can watch it [here](https://www.youtube.com/watch?v=example).
+I created a video demo to showcase the main features of Player Lineup. You can watch it [here](https://youtu.be/92_4nfZErSA).
 
 ## 🤝 Contributions
 
